@@ -1,0 +1,305 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.head
+{
+    background-image: url(pic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.logo
+{
+    height: 130px;
+    width: 160px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+.nav
+{
+    width: 85%;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button
+{
+    color: white;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.content
+{
+    color:white;
+    font-size: 30px;
+    font-style: bold;
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-50% -50%);
+}
+.side-bar
+{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(84deg, #0c8eae 0%,#000729 80%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ .sl img
+{
+    width: 30px;
+    margin: 5px auto 0;
+    cursor: pointer;
+} 
+.ul img
+{
+    width: 30px;
+    margin: 5px auto 0;
+    cursor: pointer;
+} 
+.menu 
+{
+    display: block;
+    width: 30px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.sl 
+{
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ul 
+{
+    position: absolute;
+    bottom: 5px;
+    width: 50px;
+    text-align: center;
+}
+.bubbles img
+{
+    width: 50px;
+    animation: sample 10s linear infinite;
+}
+.bubbles
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes sample
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    70%
+    {
+        opacity:1 ;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+}
+.bubbles img:nth-child(1)
+{
+    width: 50px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(2)
+{
+    width: 30px;
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(3)
+{
+    width: 25px;
+    animation-delay: 6.5s;
+}
+.bubbles img:nth-child(4)
+{
+    width: 40px;
+    animation-delay: 5.5s;
+}
+.bubbles img:nth-child(5)
+{
+    width: 30px;
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6)
+{
+    width: 20px;
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(7)
+{
+    width: 30px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(8)
+{
+    width: 20px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(9)
+{
+    width: 50px;
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(10)
+{
+    width: 30px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(11)
+{
+    width: 20px;
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(12)
+{
+    width: 40px;
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(13)
+{
+    width: 50px;
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(14)
+{
+    width: 20px;
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(15)
+{
+    width: 30px;
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(16)
+{
+    width: 50px;
+    animation-delay: 8s;
+}
+/* portrait */
+@media (max-width: 600px)
+{
+    .head
+    {
+        width: 100%;
+        height: 100vh;
+        background-image: url("pic1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .content
+{
+    color:rgb(16, 49, 16);
+    font-size: 30px;
+    font-style: bold;
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-50% -50%);
+}
+button
+{
+    color:white;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+}
+/* Tablet */
+@media screen and (max-width: 900px) and (min-width:600px)
+{
+    .head
+    {
+        width: 100%;
+        height: 100vh;
+        background-image: url("pic2.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .content
+    {
+        color:white;
+        font-size: 30px;
+        font-style: bold;
+        top: 20%;
+        left: 15%;
+        position: absolute;
+        transform: translate(-50% -50%);
+    }
+    .side-bar
+   {
+    width: 100%;
+    height: 50px;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: linear-gradient(84deg, #0c8eae 0%,#000729 80%);
+    position: absolute;
+    }
+    .menu 
+   {
+    width: 30px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top:  15px;
+   } 
+   .sl
+   {
+    /* position: unset;  */
+    text-align: center;
+    margin-left: 400px;
+    margin-top: -20px;
+    width: auto;
+    transform: none;
+    position: absolute;
+   }
+   .ul
+   {
+    width: auto;
+    margin-left: 750px;
+    position: absolute;
+   }
+}
+    
+
+
